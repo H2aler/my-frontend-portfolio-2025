@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 김재현 | 2025 Frontend Portfolio ✨</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading"></div>
+    <button class="language-toggle" aria-label="언어 변경">
+        <i class="fas fa-globe"></i>
+    </button>
+    <header>
+        <button class="menu-toggle" aria-label="메뉴 토글">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="header-buttons">
+            <button class="theme-toggle" aria-label="테마 변경">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-ko="홈" data-en="Home">홈</a></li>
+                <li><a href="#about" data-ko="소개" data-en="About">소개</a></li>
+                <li><a href="#projects" data-ko="프로젝트" data-en="Projects">프로젝트</a></li>
+                <li><a href="#contact" data-ko="연락처" data-en="Contact">연락처</a></li>
+                <li><button id="downloadPDF" class="pdf-button" data-ko="PDF 저장" data-en="Save PDF"><i class="fas fa-file-pdf"></i> PDF 저장</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="ai-badge">
+                    <i class="fas fa-code"></i>
+                    <span>My Portfolio 2025</span>
+                </div>
+                <h1 class="typing-text" data-ko="안녕하세요, 프론트엔드 개발자 김재현입니다" data-en="Hello, I am Jaehyun Kim, a Frontend Developer">
+                    <span class="line-1" data-ko="안녕하세요," data-en="Hello,">안녕하세요,</span>
+                    <span class="line-2" data-ko="저는" data-en="I'm a">프론트엔드 개발자</span>
+                    <span class="line-3" data-ko="프론트엔드 개발자" data-en="Frontend Developer">김재현입니다</span>
+                </h1>
+                <div class="hero-description">
+                    <p class="fade-in" data-ko="새로운 기술과 트렌드를 탐구하며" data-en="Exploring new technologies and trends">새로운 기술과 트렌드를 탐구하며</p>
+                    <p class="fade-in" data-ko="사용자 중심의 웹 경험을 만듭니다" data-en="Creating user-centered web experiences">사용자 중심의 웹 경험을 만듭니다</p>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item" data-tooltip="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="JavaScript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-item" data-tooltip="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/H2aler" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="floating-element" data-speed="3">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="floating-element" data-speed="4">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="floating-element" data-speed="3">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+                <div class="ai-circuit">
+                    <div class="circuit-line"></div>
+                    <div class="circuit-node"></div>
+                    <div class="circuit-line"></div>
+                    <div class="circuit-node"></div>
+                    <div class="circuit-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator-wrapper">
+            <div class="scroll-indicator" id="scrollDownBtn">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="grid-overlay"></div>
+            <div class="gradient-sphere"></div>
+            <div class="ai-particles"></div>
+        </div>
+    </section>
+
+    <!-- 모바일 PDF 저장 안내문 -->
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title" data-ko="소개" data-en="About Me">소개</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="name-title" data-ko="김재현" data-en="Jaehyun Kim">김재현 <span class="sub-title" data-ko="Frontend Developer" data-en="Frontend Developer">Frontend Developer</span></h3>
+                    <p data-ko="프론트엔드 개발에 대한 열정과 창의성을 가진 개발자입니다." data-en="A passionate and creative frontend developer.">프론트엔드 개발에 대한 열정과 창의성을 가진 개발자입니다.</p>
+                    <p data-ko="사용자 경험을 최우선으로 생각하며, 깔끔하고 효율적인 코드 작성을 지향합니다." data-en="Focused on user experience and writing clean, efficient code.">사용자 경험을 최우선으로 생각하며, 깔끔하고 효율적인 코드 작성을 지향합니다.</p>
+                    
+                    <div class="education">
+                        <h3 data-ko="학력사항" data-en="Education">학력사항</h3>
+                        <div class="education-item">
+                            <h4 data-ko="프랑스 라로셸 대학교 공과대학" data-en="La Rochelle University, France">프랑스 라로셸 대학교 공과대학</h4>
+                            <p data-ko="전공: 컴퓨터 공학" data-en="Major: Computer Engineering">전공: 컴퓨터 공학</p>
+                            <p data-ko="부전공: 마케팅, 매니지먼트" data-en="Minor: Marketing, Management">부전공: 마케팅, 매니지먼트</p>
+                            <p data-ko="기간: 2020년 ~ 2023년" data-en="Period: 2020 ~ 2023">기간: 2020년 ~ 2023년</p>
+                        </div>
+                        <div class="education-item">
+                            <h4 data-ko="Fénelon/Vieljeux 고등학교" data-en="Fénelon/Vieljeux High School">Fénelon/Vieljeux 고등학교</h4>
+                            <p data-ko="전공: 이과 특별전공 - 엔지니어링 (전기, 물리, Solid Works)" data-en="Major: Engineering Specialization - Engineering (Electronics, Physics, Solid Works)">전공: 이과 특별전공 - 엔지니어링 (전기, 물리, Solid Works)</p>
+                            <p data-ko="기간: 2017년 ~ 2020년" data-en="Period: 2017 ~ 2020">기간: 2017년 ~ 2020년</p>
+                        </div>
+                    </div>
+
+                    <div class="experience">
+                        <h3 data-ko="경력사항" data-en="Experience">경력사항</h3>
+                        <div class="experience-item">
+                            <h4 data-ko="한불 언어마을" data-en="Ko.planet">한불 언어마을</h4>
+                            <p data-ko="2024.09.01-재직중" data-en="2024.09.01 - Present">2024.09.01-재직중</p>
+                            <div class="project-detail">
+                                <h5 data-ko="웹 프론트엔드 개발" data-en="Web Frontend Development">웹 프론트엔드 개발</h5>
+                                <p data-ko="2024.09 - 현재" data-en="2024.09 - Present">2024.09 - 현재</p>
+                                <ul>
+                                    <li data-ko="번역 업무와 웹 개발, 유지보수 담당" data-en="Translation, web development, and maintenance">번역 업무와 웹 개발, 유지보수 담당</li>
+                                    <li data-ko="반응형 웹사이트 제작 및 관리" data-en="Responsive website creation and management">반응형 웹사이트 제작 및 관리</li>
+                                    <li data-ko="HTML, CSS, JavaScript 등 프론트엔드 기술 활용" data-en="Frontend technologies: HTML, CSS, JavaScript">HTML, CSS, JavaScript 등 프론트엔드 기술 활용</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="experience-item">
+                            <h4 data-ko="세아상역(주) 인턴십" data-en="SAE-A">세아상역(주)</h4>
+                            <p data-ko="6개월" data-en="6 months internship">6개월 인턴십</p>
+                            <div class="project-detail">
+                                <h5 data-ko="RPA 시스템 설계" data-en="RPA System Design">RPA 시스템 설계</h5>
+                                <ul>
+                                    <li data-ko="Microsoft Power Automate를 활용한 RPA(로봇 프로세스 자동화) 기반 시스템 설계" data-en="Designed an RPA (Robotic Process Automation) based system using Microsoft Power Automate">Microsoft Power Automate를 활용한 RPA(로봇 프로세스 자동화) 기반 시스템 설계</li>
+                                    <li data-ko="애자일 방법론을 통한 프로젝트 관리 및 팀워크 강화" data-en="Managed projects and strengthened teamwork through an agile methodology">애자일 방법론을 통한 프로젝트 관리 및 팀워크 강화</li>
+                                    <li data-ko="스프린트 회의 및 협업을 통해 문제 해결 능력 배양" data-en="Developed problem-solving skills through sprint meetings and collaboration">스프린트 회의 및 협업을 통해 문제 해결 능력 배양</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3 data-ko="기술 스택" data-en="Skills">기술 스택</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="nextjs-svg" style="display:inline-block;vertical-align:middle;">
+                              <svg class="nextjs-logo" width="21" height="21" viewBox="0 0 32 32" fill="none">
+                                <circle cx="16" cy="16" r="16" fill="#000"/>
+                                <path d="M10 22V10h2.5l5.5 8.5V10H20v12h-2.5l-5.5-8.5V22H10z" fill="#fff"/>
+                              </svg>
+                            </span>
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title" data-ko="프로젝트" data-en="Projects">프로젝트</h2>
+            <div class="project-grid"></div>
+            <div class="project-card">
+                <h3 class="project-title" data-ko="웹사이트 프로젝트" data-en="Web Site Project">웹사이트 프로젝트</h3>
+                <div class="project-tags">
+                    <span class="project-tag" data-ko="HTML5" data-en="HTML5">HTML5</span>
+                    <span class="project-tag" data-ko="CSS3" data-en="CSS3">CSS3</span>
+                    <span class="project-tag" data-ko="JavaScript" data-en="JavaScript">JavaScript</span>
+                </div>
+                <p class="project-desc" data-ko="개인 포트폴리오 및 프로젝트를 소개하는 웹사이트를 개발했습니다." data-en="Developed a website to introduce my portfolio and projects.">개인 포트폴리오 및 프로젝트를 소개하는 웹사이트를 개발했습니다.</p>
+                <div class="project-links">
+                    <a href="https://h2aler.github.io/My_Site/" target="_blank" rel="noopener" class="github-link" data-ko="1번째 웹사이트" data-en="1st Web Site">1번째 웹사이트</a>
+                    <a href="https://h2aler.github.io/My_Site_Two/" target="_blank" rel="noopener" class="github-link" data-ko="2번째 웹사이트" data-en="2nd Web Site">2번째 웹사이트</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 data-ko="AI 오목 게임 시리즈" data-en="AI Othello Game Series">AI 오목 게임 시리즈</h3>
+                <div class="project-tags">
+                    <span class="project-tag" data-ko="HTML5" data-en="HTML5">HTML5</span>
+                    <span class="project-tag" data-ko="JavaScript" data-en="JavaScript">JavaScript</span>
+                    <span class="project-tag" data-ko="AI" data-en="AI">AI</span>
+                </div>
+                <p data-ko="HTML5 기반의 AI 오목 게임 시리즈를 개발했습니다. 데스크톱과 모바일 버전을 모두 지원하며, 지속적인 업데이트를 통해 기능을 개선했습니다." data-en="Developed a series of AI Omok games based on HTML5. Supports both desktop and mobile versions, with continuous updates to improve functionality.">HTML5 기반의 AI 오목 게임 시리즈를 개발했습니다. 데스크톱과 모바일 버전을 모두 지원하며, 지속적인 업데이트를 통해 기능을 개선했습니다.</p>
+                <div class="project-links">
+                    <a href="https://h2aler.github.io/HTML5_AI_GAME_ONE/" target="_blank" rel="noopener" class="github-link" data-ko="데스크톱 버전" data-en="Desktop Version">데스크톱 버전</a>
+                    <a href="https://h2aler.github.io/HTML5_AI_GAME_ONE_MOBILE/" target="_blank" rel="noopener" class="github-link" data-ko="모바일 버전" data-en="Mobile Version">모바일 버전</a>
+                    <a href="https://h2aler.github.io/HTML5_AI_GAME_TWO_MOBILE/" target="_blank" rel="noopener" class="github-link" data-ko="확장 버전" data-en="Extended Version">확장 버전</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 data-ko="주식 시뮬레이션 게임" data-en="Stock Simulation Game">주식 시뮬레이션 게임</h3>
+                <div class="project-tags">
+                    <span class="project-tag" data-ko="HTML5" data-en="HTML5">HTML5</span>
+                    <span class="project-tag" data-ko="JavaScript" data-en="JavaScript">JavaScript</span>
+                    <span class="project-tag" data-ko="게임" data-en="Game">게임</span>
+                </div>
+                <p data-ko="HTML5 기반의 주식 시뮬레이션 게임을 개발했습니다. 실제 주식 시장을 모방한 게임으로, 사용자들이 주식 투자를 경험할 수 있습니다." data-en="Developed a stock simulation game based on HTML5. It simulates the real stock market, allowing users to experience stock investing.">HTML5 기반의 주식 시뮬레이션 게임을 개발했습니다. 실제 주식 시장을 모방한 게임으로, 사용자들이 주식 투자를 경험할 수 있습니다.</p>
+                <div class="project-links">
+                    <a href="https://h2aler.github.io/HTML5_GAME/" target="_blank" rel="noopener" class="github-link" data-ko="버전 1" data-en="Version 1">버전 1</a>
+                    <a href="https://h2aler.github.io/HTML5_GAME_TWO/" target="_blank" rel="noopener" class="github-link" data-ko="버전 2" data-en="Version 2">버전 2</a>
+                    <a href="https://h2aler.github.io/HTML5_GAME_THREE/" target="_blank" rel="noopener" class="github-link" data-ko="버전 3" data-en="Version 3">버전 3</a>
+                    <a href="https://h2aler.github.io/HTML5_GAME_FOUR/" target="_blank" rel="noopener" class="github-link" data-ko="버전 4" data-en="Version 4">버전 4</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 data-ko="미사일 크러쉬 서바이벌" data-en="Missile Crush Survival">미사일 크러쉬 서바이벌</h3>
+                <div class="project-tags">
+                    <span class="project-tag" data-ko="HTML5" data-en="HTML5">HTML5</span>
+                    <span class="project-tag" data-ko="JavaScript" data-en="JavaScript">JavaScript</span>
+                    <span class="project-tag" data-ko="게임" data-en="Game">게임</span>
+                </div>
+                <p data-ko="HTML5 기반의 미사일 크러쉬 서바이벌 게임을 개발했습니다. 사용자들이 전략적으로 미사일을 피해 생존하는 게임입니다." data-en="Developed a missile crush survival game based on HTML5. Users survive by strategically avoiding missiles.">HTML5 기반의 미사일 크러쉬 서바이벌 게임을 개발했습니다. 사용자들이 전략적으로 미사일을 피해 생존하는 게임입니다.</p>
+                <div class="project-links">
+                    <a href="https://h2aler.github.io/HTML5_GAME_FIVE/" target="_blank" rel="noopener" class="github-link" data-ko="게임 플레이" data-en="Game Play">게임 플레이</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title" data-ko="연락처" data-en="Contact">연락처</h2>
+            <div class="contact-info">
+                <div class="contact-buttons">
+                    <button class="contact-button" data-ko="연락처 보기" data-en="View Contact">
+                        <i class="fas fa-address-card"></i>
+                        연락처 보기
+                    </button>
+                </div>
+            </div>
+            <!-- print 전용 연락처 텍스트 -->
+            <div class="print-contact-inline">
+              <strong>이메일:</strong> max30105@gmail.com<br>
+              <strong>전화번호:</strong> 010-7472-8983
+            </div>
+        </div>
+    </section>
+
+    <!-- 모달 -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>max30105@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>010-7472-8983</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 김재현. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="맨 위로 이동">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script>
+    document.getElementById('scrollDownBtn').addEventListener('click', function() {
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    // 홈 버튼 클릭 시 최상단으로 스크롤
+    document.querySelector('a[href="#home"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        window.scrollTo(0, 0);
+    });
+    </script>
+</body>
+</html> 
